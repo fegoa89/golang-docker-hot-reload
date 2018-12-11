@@ -1,0 +1,9 @@
+version: '2.0'
+
+services:
+    rest-api:
+        image: api:latest
+        ports:
+            - 8080:8080
+        volumes:
+            - ./:/home/fernando/src/github.com/fegoa89/golang-docker-hot-reload
