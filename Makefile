@@ -1,7 +1,7 @@
 ## build: Build Dockerfile.
 build:
 	@echo "Building Go Binary..."
-	docker build -f cmd/rest-api/Dockerfile -t rest-api .
+	docker build --no-cache -f cmd/rest-api/Dockerfile -t rest-api .
 
 ## start-server: Start in development mode. Gets reloaded automatically when code changes.
 start-server:
